@@ -13,6 +13,6 @@ module.exports = {
     //   { text: "External", link: "https://baidu.com" },
     // ],
     // sidebar: ["/", "/bar/", ["/foo/", "Explicit link text"]], // 侧边栏导航
-    sidebar: ["/async"], // 侧边栏导航
+    sidebar: ['/', "/async"], // 侧边栏导航
   },
 };
