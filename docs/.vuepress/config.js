@@ -3,20 +3,24 @@ module.exports = {
   base: "/note/",
   // description: "Just playing around",
   markdown: {
-    lineNumbers: true,
+    lineNumbers: true
   },
   themeConfig: {
     nav: [
       // 右上角的导航
       { text: "Home", link: "/" },
-      { text: "Best", link: "/best/" },
+      { text: "进阶", link: "/best/" },
+      { text: "Typescript", link: "/Typescript/" },
+      { text: "Vue", link: "/vue/" }
       // { text: "External", link: "https://baidu.com" },
     ],
     // sidebar: ["/", "/bar/", ["/foo/", "Explicit link text"]], // 侧边栏导航
     // sidebar: ['/', "/async"], // 侧边栏导航
     sidebar: {
-      "/best/": [""],
-      "/": ["", "async"],
-    },
-  },
-};
+      "/vue/": [""],
+      "/Typescript/": ["", "htmlAndEvent"],
+      "/best/": ["", "webApi"],
+      "/": ["", "async"]
+    }
+  }
+}
