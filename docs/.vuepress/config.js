@@ -19,7 +19,7 @@ module.exports = {
     sidebar: {
       "/vue/": [""],
       "/Typescript/": ["", "htmlAndEvent"],
-      "/best/": ["", "webApi"],
+      "/best/": ["", "webApi", "css.initial"],
       "/": ["", "async"]
     }
   }
