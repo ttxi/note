@@ -1,25 +1,29 @@
 module.exports = {
   title: "一个小前端",
   base: "/note/",
-  // description: "Just playing around",
   markdown: {
     lineNumbers: true
   },
   themeConfig: {
     nav: [
-      // 右上角的导航
       { text: "Home", link: "/" },
-      { text: "进阶", link: "/best/" },
+      { text: "Tx", link: "/best/" },
       { text: "Typescript", link: "/Typescript/" },
-      { text: "Vue", link: "/vue/" }
-      // { text: "External", link: "https://baidu.com" },
+      { text: "Vue", link: "/vue/" },
+      {
+        text: "other",
+        items: [
+          { text: "Linux", link: "/other/linux/" },
+          { text: "MacOs", link: "/other/macos/" }
+        ]
+      }
     ],
-    // sidebar: ["/", "/bar/", ["/foo/", "Explicit link text"]], // 侧边栏导航
-    // sidebar: ['/', "/async"], // 侧边栏导航
     sidebar: {
       "/vue/": [""],
       "/Typescript/": ["", "htmlAndEvent"],
       "/best/": ["", "webApi", "css.initial", "lint"],
+      "/other/linux/": ["", "vi"],
+      "/other/macos/": [""],
       "/": [
         "",
         "async",
