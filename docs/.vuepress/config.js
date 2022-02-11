@@ -22,7 +22,7 @@ module.exports = {
       "/vue/": [""],
       "/Typescript/": ["", "htmlAndEvent"],
       "/best/": ["", "webApi", "css.initial", "lint"],
-      "/other/linux/": ["", "vi"],
+      "/other/linux/": ["", "vi", "auto", "shell"],
       "/other/macos/": [""],
       "/": [
         "",
