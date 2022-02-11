@@ -13,6 +13,7 @@ git commit -m 'init'
 # 如果发布到 https://<USERNAME>.github.io/<REPO>
 # git push -f git@github.com:<USERNAME>/<REPO>.git master:gh-pages
 
-git push git@github.com:ttxi/note.git master
+# git push git@github.com:ttxi/note.git master
+git push
 
 cd -
