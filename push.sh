@@ -16,4 +16,4 @@ git commit -m 'init'
 # git push git@github.com:ttxi/note.git master
 git push
 
-cd -
+# cd -
