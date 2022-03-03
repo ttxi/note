@@ -24,4 +24,6 @@ git commit -m 'deploy'
 
 git push -f git@github.com:ttxi/note.git master:gh-pages
 
+echo '111111111'
+
 cd -
