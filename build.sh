@@ -1,2 +1,1 @@
-sh deploy.sh
-sh push.sh
+sh deploy.sh && sh push.sh

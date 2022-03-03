@@ -14,7 +14,8 @@ module.exports = {
         text: "other",
         items: [
           { text: "Linux", link: "/other/linux/" },
-          { text: "MacOs", link: "/other/macos/" }
+          { text: "MacOs", link: "/other/macos/" },
+          { text: "Webpack", link: "/other/webpack/" },
         ]
       }
     ],
@@ -22,8 +23,9 @@ module.exports = {
       "/vue/": [""],
       "/Typescript/": ["", "htmlAndEvent"],
       "/best/": ["", "webApi", "css.initial", "lint"],
-      "/other/linux/": ["", "vi", "auto", "shell"],
+      "/other/linux/": ["", "vi", "auto", "shell", "linux-install"],
       "/other/macos/": [""],
+      "/other/webpack/": [""],
       "/": [
         "",
         "async",

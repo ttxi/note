@@ -4,53 +4,53 @@ sidebarDepth: 2
 
 # Linux
 
-## 1. Linux
+## Linux
 
-Linux 是一套免费使用和自由传播的类 Unix 操作系统
-在服务器端领域和嵌入式领域有非常广泛的应用
+- Linux 是一套免费使用和自由传播的类 Unix 操作系统
+- 在服务器端领域和嵌入式领域有非常广泛的应用
 
-## 2.版本
+## 版本
 
 分为内核版本和发型版本
 
-kernel
-各个厂商会制作自己的发行版本
-redhat
-CentOS
-ubuntu
-fedora
+- kernel
+- 各个厂商会制作自己的发行版本
+  - redhat
+  - CentOS
+  - ubuntu
+  - fedora
 
-## 3. Linux 与 Windows 的不同
+## Linux 与 Windows 的不同
 
-Linux 严格区分大小写
-Linux 中所有的内容以文件形式保存，包括硬件、用户和文件。
-Linux 不靠扩展名区分文件类型，是靠权限来区分，但是有一些约定的扩展名，是给管理员看的
-压缩包 .gz .bz2 .tar.bz2 .tgz
-二进制文件 .rpm
-网页文件 .html .php
-脚本文件 .sh
-配置文件 .conf
-Windows 下的程序不能直接在 Linux 中安装和运行
-Linux 更多使用字符界面
-占用的系统资源更少
-减少了出错和被攻击的可能性，会让系统更稳定
+- Linux 严格区分大小写
+- Linux 中所有的内容以文件形式保存，包括硬件、用户和文件。
+- Linux 不靠扩展名区分文件类型，是靠权限来区分，但是有一些约定的扩展名，是给管理员看的
+- 压缩包 .gz .bz2 .tar.bz2 .tgz
+- 二进制文件 .rpm
+- 网页文件 .html .php
+- 脚本文件 .sh
+- 配置文件 .conf
+- Windows 下的程序不能直接在 Linux 中安装和运行
+- Linux 更多使用字符界面
+- 占用的系统资源更少
+- 减少了出错和被攻击的可能性，会让系统更稳定
 
-## 3. 购买服务器
+## 购买服务器
 
-阿里云 ECS
-亚马逊 AWS
-百度云
+- 阿里云 ECS
+- 亚马逊 AWS
+- 百度云
 
-## 4. 连接服务器
+## 连接服务器
 
 git bash
 mac shell
 xshell4
 xftp4
 
-## 5.linux 常用命令
+## linux 常用命令
 
-### 5.1 常见目录
+## 5.1 常见目录
 
 | 目录      | 用途                                                                             |
 | --------- | -------------------------------------------------------------------------------- |
@@ -73,9 +73,9 @@ xftp4
 | /usr/bin  | 是你在后期安装的一些软件的运行脚本                                               |
 | /usr/sbin | 放置一些用户安装的系统管理的必备程序                                             |
 
-### 5.2 命令基本格式
+## 5.2 命令基本格式
 
-#### 5.2.1 命令提示符
+### 5.2.1 命令提示符
 
 [root@zhangrenyang ~]#
 root 当前登录用户
@@ -83,13 +83,13 @@ localhost 主机名
 ~ 当前工作目录,默认是当前用户的家目录，root 就是/root,普通用户是 /home/用户名
 提示符 超级用户是 #,普通用户是$
 
-#### 5.2.2 命令格式
+### 5.2.2 命令格式
 
 命令 [选项] [参数]
 当有多个选项时，可以写在一起
 一般参数有简化和完整写法两种 -a 与 --all 等效
 
-#### 5.2.3 ls
+### 5.2.3 ls
 
 查询目录中的内容
 ls [选项] [文件或者目录]
@@ -101,7 +101,7 @@ ls [选项] [文件或者目录]
 默认当前目录下的文件列表
 ls -l
 
-##### 5.2.3.1 -l
+#### 5.2.3.1 -l
 
 显示详细信息
 
@@ -109,16 +109,16 @@ drwxr-xr-x root root 800 Sep 16 00:19 logs
 drwxr-xr-x root root 800 Sep 16 00:19 logs
 文件类型和权限 所有者 所属组 文件大小 最后修改时间 文件名
 
-### 5.3 文件处理命令
+## 5.3 文件处理命令
 
-#### 5.3.1 mkdir
+### 5.3.1 mkdir
 
 建立目录 make directory
 mkdir -p [目录名]
 -p 递归创建
 mkdir -p hello
 
-#### 5.3.2 cd
+### 5.3.2 cd
 
 切换所在目录 change directory
 cd [目录]
@@ -130,18 +130,18 @@ cd [目录]
 按 TAB 键可以补全命令和目录
 cd hello
 
-#### 5.3.3 pwd
+### 5.3.3 pwd
 
 显示当前目录 pwd
 pwd
 
-#### 5.3.4 rmdir
+### 5.3.4 rmdir
 
 删除目录 remove empty directory
 rmdir [目录名]
 rmdir hello
 
-#### 5.3.5 rm
+### 5.3.5 rm
 
 删除文件或者目录 remove
 rm [文件或者目录]
@@ -150,7 +150,7 @@ rm [文件或者目录]
 rm -rf 文件或者目录] 递归强制删除所有目录
 rm -rf hello
 
-#### 5.3.6 cp
+### 5.3.6 cp
 
 copy 复制命令
 copy [源文件或者目录] [目标文件]
@@ -162,13 +162,13 @@ cd afolder/
 touch 1.txt
 cp 1.txt ~/bfolder/
 
-#### 5.3.7 mv
+### 5.3.7 mv
 
 移动文件或者改名 move
 mv [源文件或者目录] [目标文件]
 mv 1.txt 11.txt
 
-#### 5.3.8 ln
+### 5.3.8 ln
 
 链接命令,生成链接文件 link
 ln -s [源文件] [目标文件]
@@ -182,9 +182,9 @@ ln -s [源文件] [目标文件]
 # ln -s /root/bfolder/11.txt 22.txt
 ```
 
-### 5.4 文件搜索命令
+## 5.4 文件搜索命令
 
-#### 5.4.1 locate
+### 5.4.1 locate
 
 - 在后台数据库中按文件名搜索，速度比较快
 - 数据保存在/var/lib/mlocate/mlocate.db 后台数据库，每天更新一次
@@ -195,7 +195,7 @@ ln -s [源文件] [目标文件]
 yum  -y install mlocate
 ```
 
-#### 5.4.2 whereis
+### 5.4.2 whereis
 
 - 搜索命令所在路径以及帮助文档所在位置
 - whereis 命令名 whereis ls
@@ -203,30 +203,30 @@ yum  -y install mlocate
   - -m 只查找帮助文件
 - 可以查看 Shell 自带的命令，如 whereis cd
 
-#### 5.4.3 which
+### 5.4.3 which
 
 - 可以看到别名 which ls
 - 能看到的都是外部安装的命令
 - 无法查看 Shell 自带的命令，如 which cd
 
-#### 5.4.4 环境变量
+### 5.4.4 环境变量
 
 `/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin`
 
 - 定义的是系统搜索命令的路径
 - echo $PATH
 
-#### 5.4.5 find
+### 5.4.5 find
 
 文件搜索命令
 find [搜索范围] [搜索条件]
 
-##### 5.4.5.1 按名称搜索
+#### 5.4.5.1 按名称搜索
 
 避免大范围的搜索，会非常消耗系统资源
 find / -name 11.txt
 
-##### 5.4.5.2 通配符
+#### 5.4.5.2 通配符
 
 - find 是在系统当中搜索符合条件的文件名，如果需要匹配，使用通配符匹配，通配符是完全匹配
 - 通配符
@@ -239,18 +239,18 @@ find / -name 11.txt
 # find . -name "ab[cdef].txt"
 ```
 
-##### 5.4.5.3 -i
+#### 5.4.5.3 -i
 
 不区分大小写
 find . -iname "Ab[cdef].txt"
 
-##### 5.4.5.4 -user
+#### 5.4.5.4 -user
 
 按所有者进行搜索
 find /root -user root
 find /root -nouser
 
-##### 5.4.5.5 按时间搜索
+#### 5.4.5.5 按时间搜索
 
 ```sh
 find . -mtime +5
@@ -268,7 +268,7 @@ find . -mtime +5
 | 5    | 5 天前当前修改的文件 |
 | +5   | 5 天前修改的文件     |
 
-##### 5.4.5.6 按大小搜索
+#### 5.4.5.6 按大小搜索
 
 k 小写,M 大写
 find . -size +0k
@@ -278,7 +278,7 @@ find . -size +0k
 +8k 大于 8K
 +8M 小于 8M
 
-##### 5.4.5.7 综合应用
+#### 5.4.5.7 综合应用
 
 find /tmp -size +10k -a -size -20k
 查找/etc 目录下，大于 10KB 并且小于 20KB 的文件
@@ -287,7 +287,7 @@ find /tmp -size +10k -a -size -20k
 find /tmp -size +10k -a -size -20k -exec ls -lh {} \;
 exec 对上个命令的结果进行操作
 
-##### 5.4.5.9 grep
+#### 5.4.5.9 grep
 
 - 在文件当中匹配符合条件的字符串
   - -i 忽略大小写
@@ -302,9 +302,9 @@ grep -v b a.txt
 grep -i f a.txt
 ```
 
-### 5.5 压缩与解压缩命令
+## 5.5 压缩与解压缩命令
 
-#### 5.5.1 zip 格式
+### 5.5.1 zip 格式
 
 压缩文件或目录,是一种压缩格式
 | 功能 | 命令 |
@@ -324,7 +324,7 @@ rm -rf book/ rmdir book
 unzip book.zip
 ```
 
-#### 5.5.2 gzip
+### 5.5.2 gzip
 
 - gzip 为高压，可以把文件压缩得更小
 - gzip 命令不支持目录
@@ -351,7 +351,7 @@ gzip -d 1.txt.gz //解压缩文件,不保留压缩包
 gunzip 2.txt.gz
 ```
 
-#### 5.5.3 tar
+### 5.5.3 tar
 
 - 打包命令,只打包并不压缩
 - tar -cvf 打包文件名 源文件
@@ -369,7 +369,7 @@ tar -cvf book.tar book //会打包出一个 book.tar 文件
 tar -xvf book.tar
 ```
 
-#### 5.5.4 tar.gz 压缩格式
+### 5.5.4 tar.gz 压缩格式
 
 - `zip` 可以压缩目录但压缩效率不高, `gzip` 压缩效率高但不支持目录
 - 可以先打包为`.tar` 格式，再压缩为`.gz` 格式 -c 压缩为.tar.gz 格式 -x 解压缩.tar.gz 格式
@@ -383,9 +383,9 @@ tar -zcvf book.tar.gz book // -z是压缩的意思
 tar -zxvf book.tar.gz
 ```
 
-### 5.6 关机和重启命令
+## 5.6 关机和重启命令
 
-#### 5.6.1 shutdown
+### 5.6.1 shutdown
 
 - shutdown 关机命令
   - -c 取消前一个关机命令
@@ -397,7 +397,7 @@ shutdown -r 06:00
 shutdown -c
 ```
 
-#### 5.6.2 init
+### 5.6.2 init
 
 关机
 
@@ -411,7 +411,7 @@ init 0
 init 6
 ```
 
-#### 5.6.3 logout
+### 5.6.3 logout
 
 退出登录
 
@@ -419,9 +419,9 @@ init 6
 logout
 ```
 
-### 5.7 查看登录用户信息
+## 5.7 查看登录用户信息
 
-#### 5.7.1 w
+### 5.7.1 w
 
 查看登录用户信息
 
@@ -434,7 +434,7 @@ logout
 - `PCPU` 当前进程所占用的时间
 - `WHAT` 正在执行的命令
 
-#### 5.7.2 who
+### 5.7.2 who
 
 查看登录用户信息
 
@@ -442,7 +442,7 @@ logout
 - TTY 登录的终端 tty1 本地终端 pts/0 远程终端
 - LOGIN 登录时间（登录的 IP）
 
-#### 5.7.3 last
+### 5.7.3 last
 
 查看当前登录和过去登录的用户信息 默认读取 /var/log/wtmp 文件
 
@@ -452,7 +452,7 @@ logout
 - 登录时间
 - 退出时间(在线时间)
 
-#### 5.7.4 lastlog
+### 5.7.4 lastlog
 
 查看所有用户的最后一次登录时间
 
@@ -461,9 +461,9 @@ logout
 - 登录 IP
 - 最后一次登录时间
 
-### 5.8 文件查看命令
+## 5.8 文件查看命令
 
-#### 5.8.1 cat
+### 5.8.1 cat
 
 cat 命令用于连接文件并打印到标准输出设备上。
 cat [-AbeEnstTuv] [--help] [--version] fileName
@@ -471,18 +471,18 @@ cat [-AbeEnstTuv] [--help] [--version] fileName
 -n 或 --number：由 1 开始对所有输出的行数编号。
 cat -n textfile1
 
-#### 5.8.2 more
+### 5.8.2 more
 
 Linux more 命令类似 cat ，不过会以一页一页的形式显示，更方便使用者逐页阅读，而最基本的指令就是按空白键（space）就往下一页显示，按 b 键就会往回（back）一页显示，而且还有搜寻字串的功能（与 vi 相似），使用中的说明文件，请按 h 。
 more fileName
 more testfile
 
-#### 5.8.3 head
+### 5.8.3 head
 
 用来显示开头某个数量的文字区块
 head -5 readme.txt
 
-#### 5.8.4 tail
+### 5.8.4 tail
 
 tail 命令可用于查看文件的内容
 有一个常用的参数 -f 常用于查阅正在改变的日志文件。
@@ -493,7 +493,7 @@ tail [参数] [文件]
 tail -5 mail.txt
 tail -f access.log
 
-#### 5.8.5 第二页
+### 5.8.5 第二页
 
 head -10 file | tail -5
 
