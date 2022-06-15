@@ -10,26 +10,32 @@ sidebarDepth: 2
 
 -rw-r--r--
 
-文件类型
-
-- 文件
-  d 目录
-  l 软链接文件
-  所有者 所属组 其它人
-  r 读 w 写 x 执行
+- 文件类型
+  - `-` 文件
+  - `d` 目录
+  - `l` 软链接文件
+- 所有者 所属组 其它人
+- r 读 w 写 x 执行
 
 ### 1.2 基本权限的修改
 
 chmod [选项] 模式 文件名
 
-选项
--R 递归
-模式
-[ugoa][+-=][rwx]
-权限数字
-r 4
-w 2
-x 1
+- 选项
+  - `-R` : 递归
+  - `-c` : 若该文件权限确实已经更改，才显示其更改动作
+  - `-f` : 若该文件权限无法被更改也不要显示错误讯息
+  - `-v` : 显示权限变更的详细资料
+- 模式
+  - [ugoa][+-=][rwx]
+  - ![xxx](../../assets/images/linux/linux3.jpeg)
+  - ![xxx](../../assets/images/linux/linux2.jpeg)
+- 权限数字
+  - r 4
+  - w 2
+  - x 1
+
+```sh
 chmod 000 1.txt
 chmod u+w 1.txt
 chmod g+x 1.txt
@@ -42,6 +48,7 @@ chmod u-w 1.txt
 chmod u=rwx 1.txt
 
 chmod 777 1.txt
+```
 
 ### 1.3 权限的作用
 
@@ -79,6 +86,10 @@ chmod 644 folder/1.txt
 chmod 646 folder/1.txt
 chmod 757 folder
 ```
+
+<!-- https://baijiahao.baidu.com/s?id=1723058718794774392&wfr=spider&for=pc -->
+
+![xxx](../../assets/images/linux/augo.jpeg)
 
 ### 1.1.3 其它权限命令
 
@@ -157,3 +168,5 @@ root ALL=(ALL) ALL
 
 stu2 ALL=(root) ALL //新增加用户行
 ```
+
+![xxx](../../assets/images/linux/linux4.png)
