@@ -18,7 +18,8 @@ module.exports = {
           { text: "Linux", link: "/other/linux/" },
           { text: "MacOs", link: "/other/macos/" },
           { text: "Webpack", link: "/other/webpack/" },
-          { text: "组件开发", link: "/other/components/" }
+          { text: "组件开发", link: "/other/components/" },
+          { text: "设计模式", link: "/other/设计模式/" }
         ]
       }
     ],
@@ -38,6 +39,7 @@ module.exports = {
       "/other/macos/": [""],
       "/other/webpack/": [""],
       "/other/components/": [""],
+      "/other/设计模式/": ["", "如何降低前端业务复杂度"],
       "/": [
         "",
         "async",
