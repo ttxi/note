@@ -119,22 +119,22 @@ drwxr-xr-x root root 800 Sep 16 00:19 logs
 
 ### 5.3.1 mkdir
 
-建立目录 make directory
-mkdir -p [目录名]
--p 递归创建
-mkdir -p hello
+- 建立目录 make directory
+- mkdir -p [目录名]
+- -p 递归创建
+- mkdir -p hello
 
 ### 5.3.2 cd
 
-切换所在目录 change directory
-cd [目录]
-~ 家目录
-. 当前目录
-.. 上级目录
-相对路径是参照当前所在目录
-绝对路径是从根目录开始
-按 TAB 键可以补全命令和目录
-cd hello
+- 切换所在目录 change directory
+- cd [目录]
+- ~ 家目录
+- . 当前目录
+- .. 上级目录
+- 相对路径是参照当前所在目录
+- 绝对路径是从根目录开始
+- 按 TAB 键可以补全命令和目录
+- cd hello
 
 ### 5.3.3 pwd
 
@@ -143,9 +143,9 @@ pwd
 
 ### 5.3.4 rmdir
 
-删除目录 remove empty directory
-rmdir [目录名]
-rmdir hello
+- 删除目录 remove empty directory
+- rmdir [目录名]
+- rmdir hello
 
 ### 5.3.5 rm
 
@@ -158,15 +158,15 @@ rmdir hello
 
 ### 5.3.6 cp
 
-copy 复制命令
-copy [源文件或者目录] [目标文件]
--r 复制目录,默认是复制文件
--i 会在复制文件的时候给提示,如果复制的目标文件存在,会给你提示是否要覆盖
-mkdir afolder
-mkdir bfolder
-cd afolder/
-touch 1.txt
-cp 1.txt ~/bfolder/
+- copy 复制命令
+- copy [源文件或者目录] [目标文件]
+- -r 复制目录,默认是复制文件
+- -i 会在复制文件的时候给提示,如果复制的目标文件存在,会给你提示是否要覆盖
+- mkdir afolder
+- mkdir bfolder
+- cd afolder/
+- touch 1.txt
+- cp 1.txt ~/bfolder/
 
 ### 5.3.7 mv
 

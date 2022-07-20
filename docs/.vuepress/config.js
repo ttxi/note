@@ -35,7 +35,7 @@ module.exports = {
       "/react/": [""],
       "/Typescript/": ["", "htmlAndEvent"],
       "/best/": ["", "webApi", "css.initial", "scc2", "lint"],
-      "/other/linux/": ["", "vi", "auto", "shell", "linux-install"],
+      "/other/linux/": ["", "vi", "auto", "shell", "linux-install", "docker"],
       "/other/macos/": [""],
       "/other/webpack/": [""],
       "/other/components/": [""],
