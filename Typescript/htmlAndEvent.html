@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>HTML and Event 声明 | 一个小前端</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    
+    <meta name="description" content="">
+    
+    <link rel="preload" href="/note/assets/css/0.styles.ba1ec7e7.css" as="style"><link rel="preload" href="/note/assets/js/app.282b5080.js" as="script"><link rel="preload" href="/note/assets/js/2.49b3a06c.js" as="script"><link rel="preload" href="/note/assets/js/24.05705cbd.js" as="script"><link rel="prefetch" href="/note/assets/js/10.c44698c7.js"><link rel="prefetch" href="/note/assets/js/11.7c2cf634.js"><link rel="prefetch" href="/note/assets/js/12.7e03aefb.js"><link rel="prefetch" href="/note/assets/js/13.3ba589de.js"><link rel="prefetch" href="/note/assets/js/14.63a81c42.js"><link rel="prefetch" href="/note/assets/js/15.5344619d.js"><link rel="prefetch" href="/note/assets/js/16.c19539d9.js"><link rel="prefetch" href="/note/assets/js/17.c98b8387.js"><link rel="prefetch" href="/note/assets/js/18.716079d4.js"><link rel="prefetch" href="/note/assets/js/19.90826612.js"><link rel="prefetch" href="/note/assets/js/20.7efc1e95.js"><link rel="prefetch" href="/note/assets/js/21.eeead675.js"><link rel="prefetch" href="/note/assets/js/22.6292b820.js"><link rel="prefetch" href="/note/assets/js/23.9e614bab.js"><link rel="prefetch" href="/note/assets/js/25.2de047c4.js"><link rel="prefetch" href="/note/assets/js/26.0eb12a63.js"><link rel="prefetch" href="/note/assets/js/27.7b20fbd7.js"><link rel="prefetch" href="/note/assets/js/28.9a2f984f.js"><link rel="prefetch" href="/note/assets/js/29.4b336076.js"><link rel="prefetch" href="/note/assets/js/3.1921c780.js"><link rel="prefetch" href="/note/assets/js/30.f5d821b0.js"><link rel="prefetch" href="/note/assets/js/31.cdd67046.js"><link rel="prefetch" href="/note/assets/js/32.a46b4ccf.js"><link rel="prefetch" href="/note/assets/js/33.628391bb.js"><link rel="prefetch" href="/note/assets/js/34.b0cb7d6b.js"><link rel="prefetch" href="/note/assets/js/35.a13dea5d.js"><link rel="prefetch" href="/note/assets/js/36.8a1af3cc.js"><link rel="prefetch" href="/note/assets/js/37.2af4556e.js"><link rel="prefetch" href="/note/assets/js/38.c2cc6d68.js"><link rel="prefetch" href="/note/assets/js/39.60fe37ed.js"><link rel="prefetch" href="/note/assets/js/4.c7b80b55.js"><link rel="prefetch" href="/note/assets/js/40.da265297.js"><link rel="prefetch" href="/note/assets/js/41.42823c3a.js"><link rel="prefetch" href="/note/assets/js/5.ff3c2fbf.js"><link rel="prefetch" href="/note/assets/js/6.f4c8525e.js"><link rel="prefetch" href="/note/assets/js/7.204b43ad.js"><link rel="prefetch" href="/note/assets/js/8.5d093de5.js"><link rel="prefetch" href="/note/assets/js/9.f5aa8f73.js">
+    <link rel="stylesheet" href="/note/assets/css/0.styles.ba1ec7e7.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/note/" class="home-link router-link-active"><!----> <span class="site-name">一个小前端</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/note/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/note/best/" class="nav-link">
+  Tx
+</a></div><div class="nav-item"><a href="/note/Typescript/" class="nav-link router-link-active">
+  Typescript
+</a></div><div class="nav-item"><a href="/note/vue/" class="nav-link">
+  Vue
+</a></div><div class="nav-item"><a href="/note/vue3/" class="nav-link">
+  Vue3
+</a></div><div class="nav-item"><a href="/note/react/" class="nav-link">
+  React
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="other" class="dropdown-title"><span class="title">other</span> <span class="arrow down"></span></button> <button type="button" aria-label="other" class="mobile-dropdown-title"><span class="title">other</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/note/other/linux/" class="nav-link">
+  Linux
+</a></li><li class="dropdown-item"><!----> <a href="/note/other/macos/" class="nav-link">
+  MacOs
+</a></li><li class="dropdown-item"><!----> <a href="/note/other/webpack/" class="nav-link">
+  Webpack
+</a></li><li class="dropdown-item"><!----> <a href="/note/other/components/" class="nav-link">
+  组件开发
+</a></li><li class="dropdown-item"><!----> <a href="/note/other/设计模式/" class="nav-link">
+  设计模式
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/note/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/note/best/" class="nav-link">
+  Tx
+</a></div><div class="nav-item"><a href="/note/Typescript/" class="nav-link router-link-active">
+  Typescript
+</a></div><div class="nav-item"><a href="/note/vue/" class="nav-link">
+  Vue
+</a></div><div class="nav-item"><a href="/note/vue3/" class="nav-link">
+  Vue3
+</a></div><div class="nav-item"><a href="/note/react/" class="nav-link">
+  React
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="other" class="dropdown-title"><span class="title">other</span> <span class="arrow down"></span></button> <button type="button" aria-label="other" class="mobile-dropdown-title"><span class="title">other</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/note/other/linux/" class="nav-link">
+  Linux
+</a></li><li class="dropdown-item"><!----> <a href="/note/other/macos/" class="nav-link">
+  MacOs
+</a></li><li class="dropdown-item"><!----> <a href="/note/other/webpack/" class="nav-link">
+  Webpack
+</a></li><li class="dropdown-item"><!----> <a href="/note/other/components/" class="nav-link">
+  组件开发
+</a></li><li class="dropdown-item"><!----> <a href="/note/other/设计模式/" class="nav-link">
+  设计模式
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/note/Typescript/" aria-current="page" class="sidebar-link">123</a></li><li><a href="/note/Typescript/htmlAndEvent.html" aria-current="page" class="active sidebar-link">HTML and Event 声明</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/note/Typescript/htmlAndEvent.html#ts-所有-dom-元素的类型声明" class="sidebar-link">TS 所有 dom 元素的类型声明</a></li><li class="sidebar-sub-header"><a href="/note/Typescript/htmlAndEvent.html#ts-react-event-事件对象类型" class="sidebar-link">TS React Event 事件对象类型</a></li></ul></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="html-and-event-声明"><a href="#html-and-event-声明" class="header-anchor">#</a> HTML and Event 声明</h1> <h2 id="ts-所有-dom-元素的类型声明"><a href="#ts-所有-dom-元素的类型声明" class="header-anchor">#</a> TS 所有 dom 元素的类型声明</h2> <div class="language-ts line-numbers-mode"><pre class="language-ts"><code><span class="token keyword">interface</span> <span class="token class-name">HTMLElementTagNameMap</span> <span class="token punctuation">{</span>
+    <span class="token string">&quot;a&quot;</span><span class="token operator">:</span> HTMLAnchorElement<span class="token punctuation">;</span>
+    <span class="token string">&quot;abbr&quot;</span><span class="token operator">:</span> HTMLElement<span class="token punctuation">;</span>
+    <span class="token string">&quot;address&quot;</span><span class="token operator">:</span> HTMLElement<span class="token punctuation">;</span>
+    <span class="token string">&quot;applet&quot;</span><span class="token operator">:</span> HTMLAppletElement<span class="token punctuation">;</span>
+    <span class="token string">&quot;area&quot;</span><span class="token operator">:</span> HTMLAreaElement<span class="token punctuation">;</span>
+    <span class="token string">&quot;article&quot;</span><span class="token operator">:</span> HTMLElement<span class="token punctuation">;</span>
+    <span class="token string">&quot;aside&quot;</span><span class="token operator">:</span> HTMLElement<span class="token punctuation">;</span>
+    <span class="token string">&quot;audio&quot;</span><span class="token operator">:</span> HTMLAudioElement<span class="token punctuation">;</span>
+    <span class="token string">&quot;b&quot;</span><span class="token operator">:</span> HTMLElement<span class="token punctuation">;</span>
+    <span class="token string">&quot;base&quot;</span><span class="token operator">:</span> HTMLBaseElement<span class="token punctuation">;</span>
+    <span class="token string">&quot;bdi&quot;</span><span class="token operator">:</span> HTMLElement<span class="token punctuation">;</span>
+    <span class="token string">&quot;bdo&quot;</span><span class="token operator">:</span> HTMLElement<span class="token punctuation">;</span>
+    <span class="token string">&quot;blockquote&quot;</span><span class="token operator">:</span> HTMLQuoteElement<span class="token punctuation">;</span>
+    <span class="token string">&quot;body&quot;</span><span class="token operator">:</span> HTMLBodyElement<span class="token punctuation">;</span>
+    <span class="token string">&quot;br&quot;</span><span class="token operator">:</span> HTMLBRElement<span class="token punctuation">;</span>
+    <span class="token string">&quot;button&quot;</span><span class="token operator">:</span> HTMLButtonElement<span class="token punctuation">;</span>
+    <span class="token string">&quot;canvas&quot;</span><span class="token operator">:</span> HTMLCanvasElement<span class="token punctuation">;</span>
+    <span class="token string">&quot;caption&quot;</span><span class="token operator">:</span> HTMLTableCaptionElement<span class="token punctuation">;</span>
+    <span class="token string">&quot;cite&quot;</span><span class="token operator">:</span> HTMLElement<span class="token punctuation">;</span>
+    <span class="token string">&quot;code&quot;</span><span class="token operator">:</span> HTMLElement<span class="token punctuation">;</span>
+    <span class="token string">&quot;col&quot;</span><span class="token operator">:</span> HTMLTableColElement<span class="token punctuation">;</span>
+    <span class="token string">&quot;colgroup&quot;</span><span class="token operator">:</span> HTMLTableColElement<span class="token punctuation">;</span>
+    <span class="token string">&quot;data&quot;</span><span class="token operator">:</span> HTMLDataElement<span class="token punctuation">;</span>
+    <span class="token string">&quot;datalist&quot;</span><span class="token operator">:</span> HTMLDataListElement<span class="token punctuation">;</span>
+    <span class="token string">&quot;dd&quot;</span><span class="token operator">:</span> HTMLElement<span class="token punctuation">;</span>
+    <span class="token string">&quot;del&quot;</span><span class="token operator">:</span> HTMLModElement<span class="token punctuation">;</span>
+    <span class="token string">&quot;details&quot;</span><span class="token operator">:</span> HTMLDetailsElement<span class="token punctuation">;</span>
+    <span class="token string">&quot;dfn&quot;</span><span class="token operator">:</span> HTMLElement<span class="token punctuation">;</span>
+    <span class="token string">&quot;dialog&quot;</span><span class="token operator">:</span> HTMLDialogElement<span class="token punctuation">;</span>
+    <span class="token string">&quot;dir&quot;</span><span class="token operator">:</span> HTMLDirectoryElement<span class="token punctuation">;</span>
+    <span class="token string">&quot;div&quot;</span><span class="token operator">:</span> HTMLDivElement<span class="token punctuation">;</span>
+    <span class="token string">&quot;dl&quot;</span><span class="token operator">:</span> HTMLDListElement<span class="token punctuation">;</span>
+    <span class="token string">&quot;dt&quot;</span><span class="token operator">:</span> HTMLElement<span class="token punctuation">;</span>
+    <span class="token string">&quot;em&quot;</span><span class="token operator">:</span> HTMLElement<span class="token punctuation">;</span>
+    <span class="token string">&quot;embed&quot;</span><span class="token operator">:</span> HTMLEmbedElement<span class="token punctuation">;</span>
+    <span class="token string">&quot;fieldset&quot;</span><span class="token operator">:</span> HTMLFieldSetElement<span class="token punctuation">;</span>
+    <span class="token string">&quot;figcaption&quot;</span><span class="token operator">:</span> HTMLElement<span class="token punctuation">;</span>
+    <span class="token string">&quot;figure&quot;</span><span class="token operator">:</span> HTMLElement<span class="token punctuation">;</span>
+    <span class="token string">&quot;font&quot;</span><span class="token operator">:</span> HTMLFontElement<span class="token punctuation">;</span>
+    <span class="token string">&quot;footer&quot;</span><span class="token operator">:</span> HTMLElement<span class="token punctuation">;</span>
+    <span class="token string">&quot;form&quot;</span><span class="token operator">:</span> HTMLFormElement<span class="token punctuation">;</span>
+    <span class="token string">&quot;frame&quot;</span><span class="token operator">:</span> HTMLFrameElement<span class="token punctuation">;</span>
+    <span class="token string">&quot;frameset&quot;</span><span class="token operator">:</span> HTMLFrameSetElement<span class="token punctuation">;</span>
+    <span class="token string">&quot;h1&quot;</span><span class="token operator">:</span> HTMLHeadingElement<span class="token punctuation">;</span>
+    <span class="token string">&quot;h2&quot;</span><span class="token operator">:</span> HTMLHeadingElement<span class="token punctuation">;</span>
+    <span class="token string">&quot;h3&quot;</span><span class="token operator">:</span> HTMLHeadingElement<span class="token punctuation">;</span>
+    <span class="token string">&quot;h4&quot;</span><span class="token operator">:</span> HTMLHeadingElement<span class="token punctuation">;</span>
+    <span class="token string">&quot;h5&quot;</span><span class="token operator">:</span> HTMLHeadingElement<span class="token punctuation">;</span>
+    <span class="token string">&quot;h6&quot;</span><span class="token operator">:</span> HTMLHeadingElement<span class="token punctuation">;</span>
+    <span class="token string">&quot;head&quot;</span><span class="token operator">:</span> HTMLHeadElement<span class="token punctuation">;</span>
+    <span class="token string">&quot;header&quot;</span><span class="token operator">:</span> HTMLElement<span class="token punctuation">;</span>
+    <span class="token string">&quot;hgroup&quot;</span><span class="token operator">:</span> HTMLElement<span class="token punctuation">;</span>
+    <span class="token string">&quot;hr&quot;</span><span class="token operator">:</span> HTMLHRElement<span class="token punctuation">;</span>
+    <span class="token string">&quot;html&quot;</span><span class="token operator">:</span> HTMLHtmlElement<span class="token punctuation">;</span>
+    <span class="token string">&quot;i&quot;</span><span class="token operator">:</span> HTMLElement<span class="token punctuation">;</span>
+    <span class="token string">&quot;iframe&quot;</span><span class="token operator">:</span> HTMLIFrameElement<span class="token punctuation">;</span>
+    <span class="token string">&quot;img&quot;</span><span class="token operator">:</span> HTMLImageElement<span class="token punctuation">;</span>
+    <span class="token string">&quot;input&quot;</span><span class="token operator">:</span> HTMLInputElement<span class="token punctuation">;</span>
+    <span class="token string">&quot;ins&quot;</span><span class="token operator">:</span> HTMLModElement<span class="token punctuation">;</span>
+    <span class="token string">&quot;kbd&quot;</span><span class="token operator">:</span> HTMLElement<span class="token punctuation">;</span>
+    <span class="token string">&quot;label&quot;</span><span class="token operator">:</span> HTMLLabelElement<span class="token punctuation">;</span>
+    <span class="token string">&quot;legend&quot;</span><span class="token operator">:</span> HTMLLegendElement<span class="token punctuation">;</span>
+    <span class="token string">&quot;li&quot;</span><span class="token operator">:</span> HTMLLIElement<span class="token punctuation">;</span>
+    <span class="token string">&quot;link&quot;</span><span class="token operator">:</span> HTMLLinkElement<span class="token punctuation">;</span>
+    <span class="token string">&quot;main&quot;</span><span class="token operator">:</span> HTMLElement<span class="token punctuation">;</span>
+    <span class="token string">&quot;map&quot;</span><span class="token operator">:</span> HTMLMapElement<span class="token punctuation">;</span>
+    <span class="token string">&quot;mark&quot;</span><span class="token operator">:</span> HTMLElement<span class="token punctuation">;</span>
+    <span class="token string">&quot;marquee&quot;</span><span class="token operator">:</span> HTMLMarqueeElement<span class="token punctuation">;</span>
+    <span class="token string">&quot;menu&quot;</span><span class="token operator">:</span> HTMLMenuElement<span class="token punctuation">;</span>
+    <span class="token string">&quot;meta&quot;</span><span class="token operator">:</span> HTMLMetaElement<span class="token punctuation">;</span>
+    <span class="token string">&quot;meter&quot;</span><span class="token operator">:</span> HTMLMeterElement<span class="token punctuation">;</span>
+    <span class="token string">&quot;nav&quot;</span><span class="token operator">:</span> HTMLElement<span class="token punctuation">;</span>
+    <span class="token string">&quot;noscript&quot;</span><span class="token operator">:</span> HTMLElement<span class="token punctuation">;</span>
+    <span class="token string">&quot;object&quot;</span><span class="token operator">:</span> HTMLObjectElement<span class="token punctuation">;</span>
+    <span class="token string">&quot;ol&quot;</span><span class="token operator">:</span> HTMLOListElement<span class="token punctuation">;</span>
+    <span class="token string">&quot;optgroup&quot;</span><span class="token operator">:</span> HTMLOptGroupElement<span class="token punctuation">;</span>
+    <span class="token string">&quot;option&quot;</span><span class="token operator">:</span> HTMLOptionElement<span class="token punctuation">;</span>
+    <span class="token string">&quot;output&quot;</span><span class="token operator">:</span> HTMLOutputElement<span class="token punctuation">;</span>
+    <span class="token string">&quot;p&quot;</span><span class="token operator">:</span> HTMLParagraphElement<span class="token punctuation">;</span>
+    <span class="token string">&quot;param&quot;</span><span class="token operator">:</span> HTMLParamElement<span class="token punctuation">;</span>
+    <span class="token string">&quot;picture&quot;</span><span class="token operator">:</span> HTMLPictureElement<span class="token punctuation">;</span>
+    <span class="token string">&quot;pre&quot;</span><span class="token operator">:</span> HTMLPreElement<span class="token punctuation">;</span>
+    <span class="token string">&quot;progress&quot;</span><span class="token operator">:</span> HTMLProgressElement<span class="token punctuation">;</span>
+    <span class="token string">&quot;q&quot;</span><span class="token operator">:</span> HTMLQuoteElement<span class="token punctuation">;</span>
+    <span class="token string">&quot;rp&quot;</span><span class="token operator">:</span> HTMLElement<span class="token punctuation">;</span>
+    <span class="token string">&quot;rt&quot;</span><span class="token operator">:</span> HTMLElement<span class="token punctuation">;</span>
+    <span class="token string">&quot;ruby&quot;</span><span class="token operator">:</span> HTMLElement<span class="token punctuation">;</span>
+    <span class="token string">&quot;s&quot;</span><span class="token operator">:</span> HTMLElement<span class="token punctuation">;</span>
+    <span class="token string">&quot;samp&quot;</span><span class="token operator">:</span> HTMLElement<span class="token punctuation">;</span>
+    <span class="token string">&quot;script&quot;</span><span class="token operator">:</span> HTMLScriptElement<span class="token punctuation">;</span>
+    <span class="token string">&quot;section&quot;</span><span class="token operator">:</span> HTMLElement<span class="token punctuation">;</span>
+    <span class="token string">&quot;select&quot;</span><span class="token operator">:</span> HTMLSelectElement<span class="token punctuation">;</span>
+    <span class="token string">&quot;slot&quot;</span><span class="token operator">:</span> HTMLSlotElement<span class="token punctuation">;</span>
+    <span class="token string">&quot;small&quot;</span><span class="token operator">:</span> HTMLElement<span class="token punctuation">;</span>
+    <span class="token string">&quot;source&quot;</span><span class="token operator">:</span> HTMLSourceElement<span class="token punctuation">;</span>
+    <span class="token string">&quot;span&quot;</span><span class="token operator">:</span> HTMLSpanElement<span class="token punctuation">;</span>
+    <span class="token string">&quot;strong&quot;</span><span class="token operator">:</span> HTMLElement<span class="token punctuation">;</span>
+    <span class="token string">&quot;style&quot;</span><span class="token operator">:</span> HTMLStyleElement<span class="token punctuation">;</span>
+    <span class="token string">&quot;sub&quot;</span><span class="token operator">:</span> HTMLElement<span class="token punctuation">;</span>
+    <span class="token string">&quot;summary&quot;</span><span class="token operator">:</span> HTMLElement<span class="token punctuation">;</span>
+    <span class="token string">&quot;sup&quot;</span><span class="token operator">:</span> HTMLElement<span class="token punctuation">;</span>
+    <span class="token string">&quot;table&quot;</span><span class="token operator">:</span> HTMLTableElement<span class="token punctuation">;</span>
+    <span class="token string">&quot;tbody&quot;</span><span class="token operator">:</span> HTMLTableSectionElement<span class="token punctuation">;</span>
+    <span class="token string">&quot;td&quot;</span><span class="token operator">:</span> HTMLTableDataCellElement<span class="token punctuation">;</span>
+    <span class="token string">&quot;template&quot;</span><span class="token operator">:</span> HTMLTemplateElement<span class="token punctuation">;</span>
+    <span class="token string">&quot;textarea&quot;</span><span class="token operator">:</span> HTMLTextAreaElement<span class="token punctuation">;</span>
+    <span class="token string">&quot;tfoot&quot;</span><span class="token operator">:</span> HTMLTableSectionElement<span class="token punctuation">;</span>
+    <span class="token string">&quot;th&quot;</span><span class="token operator">:</span> HTMLTableHeaderCellElement<span class="token punctuation">;</span>
+    <span class="token string">&quot;thead&quot;</span><span class="token operator">:</span> HTMLTableSectionElement<span class="token punctuation">;</span>
+    <span class="token string">&quot;time&quot;</span><span class="token operator">:</span> HTMLTimeElement<span class="token punctuation">;</span>
+    <span class="token string">&quot;title&quot;</span><span class="token operator">:</span> HTMLTitleElement<span class="token punctuation">;</span>
+    <span class="token string">&quot;tr&quot;</span><span class="token operator">:</span> HTMLTableRowElement<span class="token punctuation">;</span>
+    <span class="token string">&quot;track&quot;</span><span class="token operator">:</span> HTMLTrackElement<span class="token punctuation">;</span>
+    <span class="token string">&quot;u&quot;</span><span class="token operator">:</span> HTMLElement<span class="token punctuation">;</span>
+    <span class="token string">&quot;ul&quot;</span><span class="token operator">:</span> HTMLUListElement<span class="token punctuation">;</span>
+    <span class="token string">&quot;var&quot;</span><span class="token operator">:</span> HTMLElement<span class="token punctuation">;</span>
+    <span class="token string">&quot;video&quot;</span><span class="token operator">:</span> HTMLVideoElement<span class="token punctuation">;</span>
+    <span class="token string">&quot;wbr&quot;</span><span class="token operator">:</span> HTMLElement<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br><span class="line-number">73</span><br><span class="line-number">74</span><br><span class="line-number">75</span><br><span class="line-number">76</span><br><span class="line-number">77</span><br><span class="line-number">78</span><br><span class="line-number">79</span><br><span class="line-number">80</span><br><span class="line-number">81</span><br><span class="line-number">82</span><br><span class="line-number">83</span><br><span class="line-number">84</span><br><span class="line-number">85</span><br><span class="line-number">86</span><br><span class="line-number">87</span><br><span class="line-number">88</span><br><span class="line-number">89</span><br><span class="line-number">90</span><br><span class="line-number">91</span><br><span class="line-number">92</span><br><span class="line-number">93</span><br><span class="line-number">94</span><br><span class="line-number">95</span><br><span class="line-number">96</span><br><span class="line-number">97</span><br><span class="line-number">98</span><br><span class="line-number">99</span><br><span class="line-number">100</span><br><span class="line-number">101</span><br><span class="line-number">102</span><br><span class="line-number">103</span><br><span class="line-number">104</span><br><span class="line-number">105</span><br><span class="line-number">106</span><br><span class="line-number">107</span><br><span class="line-number">108</span><br><span class="line-number">109</span><br><span class="line-number">110</span><br><span class="line-number">111</span><br><span class="line-number">112</span><br><span class="line-number">113</span><br><span class="line-number">114</span><br><span class="line-number">115</span><br><span class="line-number">116</span><br><span class="line-number">117</span><br><span class="line-number">118</span><br><span class="line-number">119</span><br><span class="line-number">120</span><br></div></div><h2 id="ts-react-event-事件对象类型"><a href="#ts-react-event-事件对象类型" class="header-anchor">#</a> TS React Event 事件对象类型</h2> <div class="language-ts line-numbers-mode"><pre class="language-ts"><code><span class="token punctuation">{</span>
+  <span class="token string">&quot;ClipboardEvent&quot;</span><span class="token operator">&lt;</span><span class="token constant">T</span> <span class="token operator">=</span> Element<span class="token operator">&gt;</span> <span class="token comment">// 剪切板事件对象</span>
+  <span class="token string">&quot;DragEvent&quot;</span><span class="token operator">&lt;</span><span class="token constant">T</span> <span class="token operator">=</span>Element<span class="token operator">&gt;</span> <span class="token comment">// 拖拽事件对象</span>
+  <span class="token string">&quot;ChangeEvent&quot;</span><span class="token operator">&lt;</span><span class="token constant">T</span> <span class="token operator">=</span> Element<span class="token operator">&gt;</span> <span class="token comment">// Change 事件对象</span>
+  <span class="token string">&quot;KeyboardEvent&quot;</span><span class="token operator">&lt;</span><span class="token constant">T</span> <span class="token operator">=</span> Element<span class="token operator">&gt;</span> <span class="token comment">// 键盘事件对象</span>
+  <span class="token string">&quot;MouseEvent&quot;</span><span class="token operator">&lt;</span><span class="token constant">T</span> <span class="token operator">=</span> Element<span class="token operator">&gt;</span> <span class="token comment">// 鼠标事件对象</span>
+  <span class="token string">&quot;TouchEvent&quot;</span><span class="token operator">&lt;</span><span class="token constant">T</span> <span class="token operator">=</span> Element<span class="token operator">&gt;</span> <span class="token comment">// 触摸事件对象</span>
+  <span class="token string">&quot;WheelEvent&quot;</span><span class="token operator">&lt;</span><span class="token constant">T</span> <span class="token operator">=</span> Element<span class="token operator">&gt;</span> <span class="token comment">// 滚轮时间对象</span>
+  <span class="token string">&quot;AnimationEvent&quot;</span><span class="token operator">&lt;</span><span class="token constant">T</span> <span class="token operator">=</span> Element<span class="token operator">&gt;</span> <span class="token comment">// 动画事件对象</span>
+  <span class="token string">&quot;TransitionEvent&quot;</span><span class="token operator">&lt;</span><span class="token constant">T</span> <span class="token operator">=</span> Element<span class="token operator">&gt;</span> <span class="token comment">// 过渡事件对象</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/note/Typescript/" class="prev router-link-active">
+        123
+      </a></span> <!----></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/note/assets/js/app.282b5080.js" defer></script><script src="/note/assets/js/2.49b3a06c.js" defer></script><script src="/note/assets/js/24.05705cbd.js" defer></script>
+  </body>
+</html>
