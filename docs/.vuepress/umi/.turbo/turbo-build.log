@@ -1,0 +1,5 @@
+[36mumi:build[0m: cache hit, replaying output [2mb0ed90dbadebcb8a[0m
+[36mumi:build: [0m
+[36mumi:build: [0m> umi@4.0.5 build /Users/xitiantian/Desktop/source-dev/umi-master/packages/umi
+[36mumi:build: [0m> pnpm tsc
+[36mumi:build: [0m

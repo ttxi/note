@@ -1,0 +1,1 @@
+{"version":3,"file":"defineConfig.d.ts","sourceRoot":"","sources":["../src/defineConfig.ts"],"names":[],"mappings":"AACA,OAAO,EAAE,kBAAkB,EAAE,MAAM,sBAAsB,CAAC;AAC1D,OAAO,KAAK,EAAE,OAAO,EAAE,MAAM,mBAAmB,CAAC;AAEjD,aAAK,UAAU,GAAG,kBAAkB,GAAG,OAAO,CAAC;AAE/C,wBAAgB,YAAY,CAAC,MAAM,EAAE,UAAU,GAAG,UAAU,CAE3D"}
